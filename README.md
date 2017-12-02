@@ -14,4 +14,8 @@ The ESP-01 is the first generation of ESP System on a Chip boards, with the same
 | 7                 | URXD (GPIO3) |                        |
 | 8                 | VCC         |                        |
 
-In normal use, pins 1 (GND), 4 (CH_PD), 6 (/RST) and 8 (VCC) are tied up for normal chip operations. When using the serial port, also pins 2 (UTXD) and 7 (URXD) are used. It only leaves pins 3 (GPIO2) and 5 (GPIO0) for I/O.
+While in normal operation, pins 1 (GND), 4 (CH_PD), 6 (/RST) and 8 (VCC) are tied up for basic chip control. When using the serial port, also pins 2 (UTXD) and 7 (URXD) are used. That only leaves pins 3 (GPIO2) and 5 (GPIO0) for I/O. CH_PD needs to be pulled to VCC to enable wifi functions; /RST may be connected to VCC for normal operation.
+
+When programming the ESP-01, pin 5 (GPIO0) needs to be pulled to ground when booting or powering up in order to enter flash mode.
+
+
