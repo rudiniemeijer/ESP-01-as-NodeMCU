@@ -6,10 +6,10 @@ The ESP-01 is the first generation of ESP System on a Chip boards, with the same
 | ESP-01 pin number | Description | NodeMCU equavalent pin |
 | :---------------- | :---------- | :----------------------|
 | 1                 | GND         |                        |
-| 2                 | IO1 TXD0 CS1 |                        |
-| 3                 | IO2 TXD1    |                        |
-| 4                 | EN CHPD     |                        |
-| 5                 | CS2 IO0     |                        |
+| 2                 | UTXD        |                        |
+| 3                 | GPIO2       |                        |
+| 4                 | CH_PD       |                        |
+| 5                 | GPIO0       |                        |
 | 6                 | /RST        |                        |
-| 7                 | RXD0        |                        |
+| 7                 | URXD        |                        |
 | 8                 | VCC         |                        |
