@@ -6,10 +6,12 @@ The ESP-01 is the first generation of ESP System on a Chip boards, with the same
 | ESP-01 pin number | Description | NodeMCU equavalent pin |
 | :---------------- | :---------- | :----------------------|
 | 1                 | GND         |                        |
-| 2                 | UTXD        |                        |
+| 2                 | UTXD (GPIO1) |                        |
 | 3                 | GPIO2       |                        |
 | 4                 | CH_PD       |                        |
 | 5                 | GPIO0       |                        |
 | 6                 | /RST        |                        |
-| 7                 | URXD        |                        |
+| 7                 | URXD (GPIO3) |                        |
 | 8                 | VCC         |                        |
+
+In normal use, pins 1 (GND), 4 (CH_PD), 6 (/RST) and 8 (VCC) are tied up for normal chip operations. When using the serial port, also pins 2 (UTXD) and 7 (URXD) are used. It only leaves pins 3 (GPIO2) and 5 (GPIO0) for I/O.
